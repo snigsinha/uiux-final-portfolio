@@ -1,0 +1,183 @@
+/* Put your style information here! */
+.column  { 
+    display: flex;
+    flex-direction: column;
+    }
+   
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    margin: 2em;
+    text-align: center;
+
+}
+
+.infographic {
+    width: 40em;
+    margin: 0;
+}
+
+.webpage {
+    width: 55em;
+    margin: 1.5em 0;
+}
+
+.about-home{
+    background-color:#3BA590;
+    display:block;
+    height: 600px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.short-about{
+    text-align: justify;
+    width: 600px;
+    
+
+}
+
+.short-about-text, .short-about-text-name{
+    color:white;
+}
+
+/* Removes bullet point appearance for navigation bar */
+li {
+    list-style-type: none;
+}
+
+
+.section {
+    margin: 1em 18em;
+    text-align: flex-start;
+
+}
+
+.name {
+    margin-bottom:0.5em;
+    color: #3BA590;
+}
+
+.navbar-flex-container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: #fff;
+    background-color: #fff;
+    padding: 10px 70px;
+}
+
+.navbar  {
+    display: flex;
+    
+}
+  
+.navbar a {
+    display: block;
+    padding: 1em 1em 0 1em;
+    color:#3BA590;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    /* text-decoration: none; */
+    
+}
+
+h1, h2, h3, h4, h5, h6 p, li, figcaption { 
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    }
+
+figcaption {
+    text-align: center;
+}
+a, a:link, a:hover, a:visited, a:active {
+    color: #3BA590;
+    font-weight:bold;
+
+}
+
+  /* Responsive for tablet */
+  @media all and (max-width: 990px) {
+
+    /* Increase font size because of smaller screen */
+    .navbar a, .btn {
+        font-size: 1.5em;
+    }
+
+
+    /* Center top part of page (logo,menu,action buttons) by changing flex properties */
+    .navbar-flex-container {
+      flex-direction: column;
+    }
+    
+    .row {
+    margin: 0 .45em 0 0;
+    align-self: center;
+  }
+    
+    .navbar  {
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    .about-home{
+        height: 430px;
+    }
+
+}
+  
+  /* ****** Responsive for phone screen ****** */
+  @media all and (max-width: 600px) {
+
+    /* Center everything and reduce margins and sizes to fit screen */
+    h1 { 
+        text-align: center;
+    }
+   
+    .row {
+      margin: .25em 0;
+      justify-content: space-around;
+      padding: 0;
+      
+      
+  }
+    
+    .navbar {
+      flex-direction: column;
+    }
+    
+    .navbar a { 
+      text-align: center; 
+      padding: 10px;
+    }
+    
+    .navbar li:last-of-type a {
+      border-bottom: none;
+    }
+
+    .about-home{
+        height: 400px;
+    }
+
+    .short-about{
+        width: 250px;
+    }
+     .short-about-text-name {
+        font-size: 40px;
+    }
+
+    .short-about-text {
+        font-size: 30px;
+
+    }
+
+
+
+  }
