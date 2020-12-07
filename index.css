@@ -131,8 +131,19 @@
     height: calc(100vh - 350px);
     margin: 0px 30px;
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items: center;
+    flex-direction: column;
+}
+
+#social-media {
+    /* justify-content: */
+    align-items: center;
+
+}
+
+#social-media-img {
+    margin: 0 10px;
 }
 
 #footer {
