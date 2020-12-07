@@ -53,6 +53,7 @@
     height: 100vh;
     display:flex;
     flex-direction: column;
+    /* border-bottom: 4px solid #3BA590; */
 
 }
 
@@ -70,7 +71,27 @@
 
 .projects-div {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: calc(100vh - 40px);
     
+}
+
+.projects-row {
+    display:flex;
+    flex-direction: row;
+    /* justify-content: space-around;  */
+     align-items: center; 
+    height: calc((100vh - 150px)/2);
+   
+   
+
+
+}
+
+.card {
+    margin: 2em;
 }
 
 #header{
@@ -80,6 +101,46 @@
     color: #3BA590;
     border-bottom: 4px solid #3BA590;
 
+}
+
+#about {
+    
+    background-color:#E1F4F0;
+    display:block;
+    height: calc(100vh - 75px);
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+    
+
+}
+
+.about-items {
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    
+
+}
+
+.item {
+    width: 50vh;
+    height: calc(100vh - 350px);
+    margin: 0px 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#footer {
+    height: 75px;
+    background-color:#3BA590;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Removes bullet point appearance for navigation bar */
 li {
@@ -123,8 +184,9 @@ li {
     
 }
 
-h1, h2, h3, h4, h5, h6 p, li, figcaption { 
+h1, h2, h3, h4, h5, h6, p, li, figcaption { 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #3BA590;
     
     }
 
@@ -214,6 +276,19 @@ html {
     .short-about-text {
         font-size: 30px;
 
+    }
+
+    .projects-row {
+        flex-direction: column;
+        margin: 5em;
+    }
+    .about-items {
+        flex-direction: column;
+    }
+
+    #about, #work, .projects-div,.projects-row {
+        height: auto;
+        
     }
 
 
