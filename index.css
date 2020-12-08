@@ -214,8 +214,23 @@ p, li{
     flex-direction: row;
 }
 
+.grid-caption {
+    /* margin-top: 0.5em; */
+    text-align: center;
+    font-size: 14px;
+    color: rgb(49, 48, 48) ;
+  }
+
+  .image-with-caption {
+      display:flex;
+      flex-direction: column;
+  }
+
+  img {
+      border: 0.1px solid lightgray;
+  }
 .overview-item {
-    margin: 0px 30px;
+    margin: 0px 50px;
     display: flex;
     
     align-items: flex-start;
