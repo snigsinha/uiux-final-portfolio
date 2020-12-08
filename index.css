@@ -50,7 +50,7 @@
 
 #work {
     display:block;
-    height: 100vh;
+    height: auto;
     display:flex;
     flex-direction: column;
     /* border-bottom: 4px solid #3BA590; */
@@ -74,7 +74,7 @@
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    height: calc(100vh - 40px);
+    height: auto;
     
 }
 
@@ -83,7 +83,7 @@
     flex-direction: row;
     /* justify-content: space-around;  */
      align-items: center; 
-    height: calc((100vh - 150px)/2);
+    height: auto;
    
    
 
@@ -92,6 +92,13 @@
 
 .card {
     margin: 2em;
+    width: 350px;
+    height: 250px;
+    
+    /* max-height: 400px; */
+    /* height: 350px; */
+    /* border: 30px solid #3BA590;
+    border-radius: 4px; */
 }
 
 #header{
@@ -144,6 +151,12 @@
 
 #social-media-img {
     margin: 0 10px;
+}
+
+#project-img {
+    height: 200px;
+    width: 350px;
+    overflow: hidden;
 }
 
 #footer {
