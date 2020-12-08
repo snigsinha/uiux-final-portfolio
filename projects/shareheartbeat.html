@@ -1,0 +1,170 @@
+<!doctype html>
+<head>
+  <title>ShareHeartBeat</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+                           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+                           crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> 	&uarr; Back to Top</button>
+    <div class="column">
+      <div class="navbar-flex-container">
+
+        <!-- Brand Logo -->
+        <div class="row">
+          <h1 class="name"><a href="../home.html"> Full Name</a></h1>
+        </div>
+      
+        <!-- Menu Items -->
+        <ul class="navbar">
+          <li id="ul"><a href="../home.html#work">Work</a></li>
+          <li id="ul"><a href="../home.html#about">About</a></li>
+          <li id="ul"><a href="../home.html#">Resume</a></li>
+        </ul>
+    
+    
+      </div>
+      <div class="overview">
+        <div class="title">
+        <h1 >ShareHeartBeat</h1>
+      </div>
+      <div class="short-desc">
+        <div class="overview-item" style="width:70vh;">
+        <p>Share and feel your significant other’s heartbeat by hugging a plush heart.
+            This was a group project we made for a Design/Robotics class I took at Brown.
+            While it was conceptualised and Protoyped before the COVID-19 Pandemic, this project
+            has since taken on a new meaning and value. 
+        
+        </p>
+        
+      </div>
+      <div class="overview-item" style="width:30vh;">
+        <ul>
+          <li id="ul"><strong>Type:</strong> Designing Humanity Centered Robots Project</li>
+          <br>
+          <li id="ul"><strong>Timeline:</strong> October-December 2019</li>
+        </ul>
+      </div>
+
+      </div>
+
+    </div>
+    
+
+    <div class="section">
+      <h2>Designing the heartbeat to feel real</h2>
+      <p>
+        In our first iterations, we struggled to get the heartbeat to feel real. If anything, our vibrations felt like receiving text messages.
+We decided to purchase a haptic motor controller <a href="https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout?view=all">(Adafruit DRV 2605L)</a> that already has built-in vibration patterns. We found that using a combination of two different vibrations in succession (strong beat followed by a short beat) made the vibrations truly feel like a heartbeat.
+
+      </p>
+    </div>
+      <div class="section">
+      <h2>Connecting the heartrate sensor</h2>
+      <p>
+        
+        We had difficulty getting our analog-to-digital converter (ADC) to work so we decided to connect the sensor to our Arduino, which we then plugged into our Raspberry Pi to retrieve the heartrate.
+
+      </p>
+    </div>
+      
+
+      <div class="section">
+        <h2>Getting the two Pis to communicate</h2>
+        <p>
+            The next big challenge was figuring out how to get the two Pis to communicate. Each Pi had to send a heartbeat and receive a heartbeat in realtime.
+We used sockets to get the Pis to communicate over wifi. One Pi was the server, and the other was the client.
+
+        <iframe style="display:block; margin: 1em;" width="420" height="315"
+        src="https://www.youtube.com/embed/Cm2Uyb8w">
+        </iframe>
+            
+          
+  
+        </p>
+        
+        </div>
+        <div class="section">
+            <h2>Finalizing the form factor</h2>
+            <p>
+                Ideally, we wanted to use the iconic IKEA heart plushie with hands, because then we could place the pulse sensor on the hands of the heart. However, we were unable to order the larger-sized hearts online to the US, so we ordered tiny ones we found on Amazon.
+                
+      
+            </p>
+            <img src="shareheartbeat/ikea_heart.png" class="webpage"/>
+            
+
+
+            <p>
+                We decided to scrap the tiny palm-sized version of the IKEA heart plushie and proceeded to stick with large plush hearts that could be hugged fully.
+We brainstormed where to place the pulse sensor. In order to test the best location, we asked several people to hug the heart plushie and realized that a lot of hands were on either end of the heart. So we decided to place the pulse sensor on the side of the heart, where the right index finger would touch when the heart is hugged.
+            </p>
+            <img src="shareheartbeat/heart1.jpeg" class="page"/>
+            <img src="shareheartbeat/heart2.png" class="page"/>
+            <img src="shareheartbeat/heart3.jpeg" class="webpage"/>
+            
+            </div>
+
+            <div class="section">
+                <h2>Final Working Product</h2>
+                
+                <p>By using a powerbank as our power source, we were able to go wireless and place all the parts inside the plush heart. It was important to protect our wires, so we created a simple shield.</p>
+                <img src="shareheartbeat/final_working_product1.jpeg" class="webpage"/>
+                <img src="shareheartbeat/final_working_product.jpeg" class="webpage"/>
+
+                
+                
+                </div>
+
+                <div class="section">
+                    <a href=""> <h2>Video Demo Coming Soon (Gives away anonymity)</h2></a>
+
+                </div>
+
+            
+        
+      
+      
+
+
+      
+  
+    
+
+
+<div class="conclusion" style="background-color: #E1F4F0;">
+  <h1>Final Thoughts</h1>
+  <p> I learned so much from this project. It was my first time working with hardware and explroing communication
+      between two computers using websockets and servers. Apart from the new technical challenge, disguising hardware in a cozy
+    heart shaped pillow is an interesting design challenge. In the end, the proof of concept turned out great and was well
+received by my classmates who tested out the product. </p>
+
+</div>
+
+   
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+
+</html>
