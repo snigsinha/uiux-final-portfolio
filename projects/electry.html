@@ -1,0 +1,203 @@
+<!doctype html>
+<head>
+  <title>Electry</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+                           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+                           crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> 	&uarr; Back to Top</button>
+    <div class="column">
+      <div class="navbar-flex-container">
+
+        <!-- Brand Logo -->
+        <div class="row">
+          <h1 class="name"><a href="../home.html"> Full Name</a></h1>
+        </div>
+      
+        <!-- Menu Items -->
+        <ul class="navbar">
+          <li id="ul"><a href="../home.html#work">Work</a></li>
+          <li id="ul"><a href="../home.html#about">About</a></li>
+          <li id="ul"><a href="../home.html#">Resume</a></li>
+        </ul>
+    
+    
+      </div>
+      <div class="overview">
+        <div class="title">
+        <h1 >Iteratively Designing Electry</h1>
+      </div>
+      <div class="short-desc">
+        <div class="overview-item" style="width:70vh;">
+        <p>Electry is pitched as “LinkedIn for skilled blue-collar workers.” and is a part of Y'20's cohort
+            <br>
+            In a group project, we designed Electry's web interface, made a hi-fi mockup and user-tested it.
+            We chose Electry, because we liked the idea of exploring a familiar problem — finding employment — in a different industry — blue-collar work.
+          
+        </p>
+          <p>
+
+          
+        </p>
+      </div>
+      <div class="overview-item" style="width:30vh;">
+        <ul>
+          <li id="ul"><strong>Type:</strong> UI/UX Project</li>
+          <br>
+          <li id="ul"><strong>Timeline:</strong> November 2020</li>
+        </ul>
+      </div>
+
+      </div>
+
+    </div>
+    
+
+    <div class="section">
+      <h2>1. Hi-Fi Mockup</h2>
+      <p>
+        Essentially, Electry is a job board to connect blue-collar workers with companies looking to hire them. Companies publish job openings on the platform, workers to find opportunities that match their qualifications and preferences, then the companies can follow-up with applicants off-platform.
+      </p>
+      <p>
+        Notable Design Choices:
+        <ul>
+        <li>Focus on employees and improve their job seeking experience</li>
+        <li>Emphasizes essential information about each job through a succint profile building process</li>
+        <li>Provides personalized experience through onboarding, exploring job openings, and expressing interest</li>       
+    </ul>
+      </p>
+
+      <h3 style="text-align: center;">Home</h3>
+      <div class="sketches-row">
+          
+          <img src="electry/post_home.jpg" class="page"/>
+          <img src="electry/post_login.jpg" class="page"/>
+
+      </div>
+
+      <h3 style="text-align: center;">Onboarding</h3>
+      <div class="sketches-row">
+       
+        <img src="electry/post_onboarding1.jpg" class="page"/>
+        <img src="electry/post_onboarding2.jpg" class="page"/>
+
+    </div>
+
+    <h3 style="text-align: center;">Jobs Search</h3>
+    <div class="sketches-row">
+        
+        <img src="electry/post_search_none.jpg" class="page"/>
+        <img src="electry/post_search_full.jpg" class="page"/>
+
+    </div>
+
+    <h3 style="text-align: center;">Job and Company Profile</h3>
+    <div class="sketches-row">
+        
+        <img src="electry/post_modal.jpg" class="page"/>
+        <img src="electry/post_company.jpg" class="page"/>
+
+    </div>
+
+    <h3 style="text-align: center;">Saved Jobs</h3>
+    <div class="sketches-row">
+        
+        <img src="electry/post_myjobs.jpg" class="page"/>
+        
+
+    </div>
+
+
+      
+    </div>
+
+    <div class="section">
+      <h2>2. User Testing</h2>
+      
+      <h4>Task</h4>
+
+      <p>
+       
+        <strong>Scenario:</strong> You are a trained blue-collar worker looking for a job.
+        <br>
+        <ul>
+        <li><strong>Subtask 1:</strong> Sign up by completing the onboarding process. Be sure to answer every question in the survey.</li>
+        <li><strong>Subtask 2:</strong> Now that you have gotten a list of employers that match your preferences, explore your recommended jobs and share your profile with one employer.</li>
+    </ul>
+</p>
+           
+    
+<h4>Post-Test Questions</h4>
+      <p>
+          <ol>
+              <li>Were you <strong>successful</strong> at completing the task? How difficult was it?
+            </li>
+              <li>What <strong>frustrated</strong> you most about this site?</li>
+              <li>If you had a <strong>magic wand</strong>, how would you improve this site?</li>
+              <li>What did you <strong>like about the site</strong>?</li>
+          </ol>
+      </p>
+
+      
+      
+      
+    </div>
+
+    <div class="section">
+      <h3>Analysis of Results</h3>
+      <p>Based on the Tasks + Subtasks, the User Testing results show that users were generally able to complete the tasks without any issues. The results reveal that users enjoyed how the interface was simple to use, concise and effectively indicated progress with visual cues.
+      </p>
+      
+      
+      <h5>Future Considerations</h5>
+      <p><ul>
+          <li>On the “My Jobs” page, add a go back button to navigate back to recommended jobs</li>
+          <li>When editing profiling, allow users to click between profile sections </li>
+      </ul>
+        
+        </p>
+
+
+      
+
+    </div>
+    
+
+
+<div class="conclusion" style="background-color: #E1F4F0;">
+  <h1>Final Thoughts</h1>
+  <p> This project helped me understand the value of user testing. I was pleasantly
+      surprised by the positive response and success in user completing tasks. 
+    Having a user's perspective opened my mind to limitations and opportunities
+for improvement that I would not have found otherwise. </p>
+
+</div>
+
+    </div>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+
+</html>

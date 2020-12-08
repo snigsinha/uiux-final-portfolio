@@ -129,6 +129,20 @@ p, li{
     font-size: 18px
 }
 
+.sketches-row {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2em;
+}
+
+.page {
+    width: 350px;
+    border: 0.1px solid gray;
+    margin: 1em;
+}
+
 .conclusion {
     background-color: #E1F4F0;
     display:flex;
