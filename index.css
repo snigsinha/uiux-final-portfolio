@@ -348,6 +348,10 @@ html {
     scroll-behavior: smooth;
   }
 
+.me{
+    width:275px;
+}
+
   /* Responsive for tablet */
   @media all and (max-width: 990px) {
 
